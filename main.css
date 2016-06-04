@@ -77,3 +77,10 @@ body {
 #traqleefooter {
     height: 50px;
 }
+th.google-visualization-table-th.gradient.sort-descending {
+    color: #f2f2f2;
+    font-size: 1.8em;
+    font-weight: 600;
+    font-family: 'Helvetica Neue' !important;
+    border: 0;
+}

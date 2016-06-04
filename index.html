@@ -23,7 +23,7 @@
 
       var data = response.getDataTable();
       var table = new google.visualization.Table(document.getElementById('table_div'));
-      table.draw(data, {showRowNumber: false, 'allowhtml': true, width: '100%', height: '100%'});
+      table.draw(data, {showRowNumber: false, 'allowhtml': true, width: '100%', height: '100%', sortAscending: false, sortColumn: 1});
     }
 </script>
 </head>
