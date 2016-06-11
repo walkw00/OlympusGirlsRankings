@@ -1,8 +1,6 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <script src="//fast.eager.io/qUAdXNE64g.js"></script>
-    <link rel="stylesheet" type="text/css" href="main.css">
     <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
     <script type="text/javascript">
     google.charts.load('current', {packages: ['table']});
@@ -11,7 +9,7 @@
         var queryString = encodeURIComponent('SELECT B, D');
 
       var query = new google.visualization.Query(
-          'https://docs.google.com/spreadsheets/d/1eydActy-zp87XHrcBHGs1umTJ-8tjJoonvNAvVQhMOE/gviz/tq?sheet=Sheet1&headers=1&tq=' + queryString);
+          'https://docs.google.com/spreadsheets/d/1uWgsx0caFTKiFoq4K3UPpB472-ZtvaZlbd3iICle690/gviz/tq?sheet=submitreps&headers=1&tq=' + queryString);
       query.send(handleQueryResponse);
     }
 
@@ -25,7 +23,8 @@
       var table = new google.visualization.Table(document.getElementById('table_div'));
       table.draw(data, {showRowNumber: false, 'allowhtml': true, width: '100%', height: '100%', sortAscending: false, sortColumn: 1});
     }
-</script>
+      </script>
+    <link rel="stylesheet" type="text/css" href="main.css">
 </head>
   <body>
       <div class="wrapper">
