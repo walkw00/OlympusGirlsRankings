@@ -9,26 +9,20 @@
     google.charts.setOnLoadCallback(drawSheetName);
    	function drawSheetName() {
         var queryString = encodeURIComponent('SELECT B, D');
-
       var query = new google.visualization.Query(
-          'https://docs.google.com/spreadsheets/d/1uWgsx0caFTKiFoq4K3UPpB472-ZtvaZlbd3iICle690/gviz/tq?sheet=submitreps&headers=1&tq=' + queryString);
+          'https://docs.google.com/spreadsheets/d/1eydActy-zp87XHrcBHGs1umTJ-8tjJoonvNAvVQhMOE/gviz/tq?sheet=Sheet1&headers=1&tq=' + queryString);
       query.send(handleQueryResponse);
     }
-
     function handleQueryResponse(response) {
       if (response.isError()) {
         alert('Error in query: ' + response.getMessage() + ' ' + response.getDetailedMessage());
         return;
       }
-
       var data = response.getDataTable();
       var table = new google.visualization.Table(document.getElementById('table_div'));
       table.draw(data, {showRowNumber: false, 'allowhtml': true, width: '100%', height: '100%', sortAscending: false, sortColumn: 1});
     }
-    $(document).bind("mobileinit", function () {
-    $.mobile.ajaxEnabled = false;
-});
-      </script>
+</script>
 </head>
   <body>
       <div class="wrapper">
@@ -40,6 +34,5 @@
     </div>
   </body>
 </html>
-
 
 
